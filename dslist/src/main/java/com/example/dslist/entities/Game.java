@@ -15,23 +15,29 @@ public class Game {
   
   @Column(name = "game_year")
   private Integer year;
-  private String platform;
+  private String platforms;
+  private Double score;
   private String imgUrl;
   private String genre;
+  
+  @Column(columnDefinition = "TEXT")
   private String shortDescription;
+  
+  @Column(columnDefinition = "TEXT")
   private String longDescription;
   
   public Game() {
   }
   
   public Game(
-      Long id, String title, Integer year, String platform, String imgUrl, String genre, String shortDescription,
-      String longDescription
+      Long id, String title, Integer year, String platforms, Double score, String imgUrl, String genre,
+      String shortDescription, String longDescription
   ) {
     this.id = id;
     this.title = title;
     this.year = year;
-    this.platform = platform;
+    this.platforms = platforms;
+    this.score = score;
     this.imgUrl = imgUrl;
     this.genre = genre;
     this.shortDescription = shortDescription;
@@ -62,12 +68,20 @@ public class Game {
     this.year = year;
   }
   
-  public String getPlatform() {
-    return platform;
+  public String getplatforms() {
+    return platforms;
   }
   
-  public void setPlatform(String platform) {
-    this.platform = platform;
+  public void setplatforms(String platforms) {
+    this.platforms = platforms;
+  }
+  
+  public Double getScore() {
+    return score;
+  }
+  
+  public void setScore(Double score) {
+    this.score = score;
   }
   
   public String getImgUrl() {
