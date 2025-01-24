@@ -2,3 +2,8 @@
 GET localhost:8080/games
 
 ###
+
+### Buscar game por id
+GET localhost:8080/games/2
+
+###
