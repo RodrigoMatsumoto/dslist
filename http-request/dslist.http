@@ -1,9 +1,11 @@
 ### Buscar todos os games
 GET localhost:8080/games
-
-###
+##
 
 ### Buscar game por id
 GET localhost:8080/games/2
+##
 
-###
+### Buscar lista de games
+GET localhost:8080/lists
+##
