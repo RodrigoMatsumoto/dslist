@@ -9,3 +9,7 @@ GET localhost:8080/games/2
 ### Buscar lista de games
 GET localhost:8080/lists
 ##
+
+### Buscar games por lista
+GET localhost:8080/lists/1/games
+##
